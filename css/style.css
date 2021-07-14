@@ -80,8 +80,8 @@ a{
       text-shadow: 2px 2px 50px #000;
   }
 
-  .nav .icon {
-    display: none;
+  .nav .icon:hover {
+    cursor: pointer;
   }
 
  
@@ -137,7 +137,7 @@ a{
     position: fixed;
     top:80px;
     right: 0;
-    height: 52px;
+    height: 42px;
     width: 80px;
     align-items: center;
     display: flex;
