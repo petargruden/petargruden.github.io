@@ -83,6 +83,57 @@ a{
   .nav .icon:hover {
     cursor: pointer;
   }
+/*HIDE on desktop*/
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu{
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media(max-width: 800px){
+  nav .mainMenu {
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      padding-bottom: 100px;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.80);
+      transition: top 1s ease;
+      display: none;
+  }
+  nav .mainMenu li{
+    padding: 20px;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition-duration: 0.3s;
+
+  }
+  nav .mainMenu .closeMenu:hover{
+    color: #be9971;
+    transition-duration: 0.3s;
+  }
+  nav .openMenu {
+      display: block;
+  }
+ 
+}
 
  
 
