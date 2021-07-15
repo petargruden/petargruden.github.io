@@ -86,7 +86,7 @@ a{
 /*HIDE on desktop*/
   nav .openMenu {
     font-size: 2rem;
-    margin: 20px;
+    margin: 5px;
     display: none;
     cursor: pointer;
 }
@@ -97,43 +97,7 @@ nav .mainMenu .closeMenu{
   cursor: pointer;
 }
 
-@media(max-width: 800px){
-  nav .mainMenu {
-      height: 100vh;
-      width: 100%;
-      position: fixed;
-      padding-bottom: 100px;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 10;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: rgba(0, 0, 0, 0.80);
-      transition: top 1s ease;
-      display: none;
-  }
-  nav .mainMenu li{
-    padding: 20px;
-  }
-  nav .mainMenu .closeMenu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    transition-duration: 0.3s;
 
-  }
-  nav .mainMenu .closeMenu:hover{
-    color: #be9971;
-    transition-duration: 0.3s;
-  }
-  nav .openMenu {
-      display: block;
-  }
- 
-}
 
  
 
@@ -161,7 +125,8 @@ nav .mainMenu .closeMenu{
   }
 
   .button{
-    margin-top: 150px;
+    position: relative;
+    margin-top: 100px;
 
   }
   .active{
@@ -169,6 +134,7 @@ nav .mainMenu .closeMenu{
     border-bottom: 1px solid white;
   }
   .button a {
+    position: relative;
     padding: 18px;
     color: white;
     border: 2px solid #5e503f;
@@ -306,7 +272,7 @@ ul{
   background-color: #5e503f;
   color: white;
   bottom: 0;
-  
+  width: 100%;
 }
 
 /*PROJECTS page*/
@@ -446,7 +412,58 @@ button:hover{
 
 }
 
+@media(max-width: 800px){
+  nav .mainMenu {
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      padding-bottom: 100px;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.80);
+      transition: top 1s ease;
+      display: none;
+  }
+  nav .mainMenu li{
+    padding: 20px;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition-duration: 0.3s;
 
+  }
+  nav .mainMenu .closeMenu:hover{
+    color: #be9971;
+    transition-duration: 0.3s;
+  }
+  nav .openMenu {
+      display: block;
+    transition-duration: 0.3s;
+
+  }
+  nav .openMenu:hover{
+    color: #be9971;
+    transition-duration: 0.3s;
+  }
+  .social{
+    display: none;
+  }
+  .border-left{
+    border: none;
+  }
+  .border-right{
+    border: none;
+  }
+ 
+}
 
 
  

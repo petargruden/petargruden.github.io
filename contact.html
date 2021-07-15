@@ -35,11 +35,16 @@
 
             <div class="social mt-3">
                 <span class="">
-                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+
                 </span>
 
                 <span class="">
-                    <i class="fab fa-instagram fa-2x "></i>
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
                 </span>
             </div>
 
@@ -49,29 +54,45 @@
                 <div class="container ">
 
                     <nav class="navbar d-flex justify-content-between " id="navigation">
-                        <ul class="nav">
+
+                        <ul class="nav ">
                             <li class="nav-item  text-center zoom">
                                 <a class="navbar-brand border-0" href="index.html">KDS Valentak</a>
                             </li>
-
-
                         </ul>
 
-                        <ul class="nav d-flex justify-content-end ">
-                            <li class="nav-item text-center">
-                                <a href="index.html">Naslovna</a>
-                            </li>
+                        <div class="openMenu">
+                            <i class="fa fa-bars"></i>
+                        </div>
+
+                        <ul class="nav mainMenu">
 
                             <li class="nav-item text-center">
+                                <a  href="index.html">Naslovna</a>
+                            </li>
+
+                            <li class="nav-item text-center ">
                                 <a href="projekt_1.html">Projekt</a>
                             </li>
-                            <li class="nav-item text-center">
+                            <li class="nav-item text-center ">
                                 <a class="active" href="contact.html">Kontakt</a>
                             </li>
-                            <li class="nav-item text-center">
+                            <li class="nav-item text-center ">
                                 <a href="about.html">O nama</a>
                             </li>
 
+                            <div class="closeMenu">
+                                <i class="fa fa-times"></i>
+                            </div>
+
+
+
+                            <!--
+                            <li class="nav-item text-center ">
+                                <a class="icon">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </li>-->
 
                         </ul>
 
@@ -146,47 +167,52 @@
 
 
     <div class="container-fluid info">
-        <div class="container d-flex justify-content-around mt-4 mb-4">
-            <div class="text-center info-content">
-                <h4 class="mb-3">Društvene mreže</h4>
-                <p>Podržite i pratite Naš rad i na društvenim mrežama!</p>
+        <div class="container mt-4 mb-4">
 
-                <span class="">
-                    <i class="fab fa-facebook-square fa-2x"></i>
-                </span>
+            <div class="row justify-content-around">
 
-                <span class="">
-                    <i class="fab fa-instagram fa-2x "></i>
-                </span>
-            </div>
+                <div class="text-center info-content col-lg-6 col-sm-12">
+                    <h4 class="mb-3">Društvene mreže</h4>
+                    <p>Podržite i pratite Naš rad i na društvenim mrežama!</p>
 
-            <div class=" info-content ">
-                <h4 class=" text-center mb-3">Kontakt</h4>
-                <ul>
-                    <li>
-                        <span>
-                            <i class="fas fa-phone fa-lg"></i>
-                        </span>
-                        <span>+ 385 91 123 1234</span>
-                    </li>
-                    <li>
-                        <a href="mailto:valentak@gmail.com">
+                    <span class="">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </span>
+
+                    <span class="">
+                        <i class="fab fa-instagram fa-2x "></i>
+                    </span>
+                </div>
+
+                <div class=" info-content col-lg-6 col-sm-12 mt-sm-5 mt-md-0 ">
+                    <h4 class="text-center mb-3">Kontakt</h4>
+                    <ul class="p-left">
+                        <li>
                             <span>
-                                <i class="fas fa-envelope fa-lg"></i>
+                                <i class="fas fa-phone fa-lg"></i>
                             </span>
-                            <span>valentak@gmail.com</span>
-                        </a>
-                    </li>
+                            <span>+ 385 91 123 1234</span>
+                        </li>
+                        <li>
+                            <a href="mailto:valentak@gmail.com">
+                                <span>
+                                    <i class="fas fa-envelope fa-lg"></i>
+                                </span>
+                                <span>valentak@gmail.com</span>
+                            </a>
+                        </li>
 
-                    <li>
-                        <span>
-                            <i class="fas fa-map-marker-alt fa-lg"></i>
-                        </span>
-                        <span class="ps-1">Zagrebačka ul. 105, 10370, Gračec</span>
-                    </li>
-                </ul>
+                        <li>
+                            <span>
+                                <i class="fas fa-map-marker-alt fa-lg"></i>
+                            </span>
+                            <span class="ps-1">Zagrebačka ul. 105, 10370, Gračec</span>
+                        </li>
+                    </ul>
 
+                </div>
             </div>
+
 
         </div>
     </div>
@@ -200,14 +226,22 @@
     </div>
 
 
+    <script>
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
 
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
 
-
-
-
-
-
-
+        function show() {
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        function close() {
+            mainMenu.style.top = '-100%';
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
