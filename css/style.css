@@ -7,10 +7,10 @@
 }
 body{
   background-color: #e8e8e4;
+  min-height: fit-content;
 }
 a{
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
 .big-image {
     height: 90vh;
@@ -32,7 +32,7 @@ a{
   
   .overlay h1 {
     font-size: 65px;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
     margin-top: 100px;
   }
   
@@ -67,7 +67,7 @@ a{
   .opacity{
     padding: 0;
     margin: 0;
-    transition: 0.6s ;
+    transition: 0.6s;
     background-color: rgba(0, 0, 0, 0.8);
     
   }
@@ -97,9 +97,6 @@ nav .mainMenu .closeMenu{
   cursor: pointer;
 }
 
-
-
- 
 
 
   /*zoom nav logo*/
@@ -385,7 +382,7 @@ button:hover{
   .jumbo-text {
     width: 100% !important;
   }
-  
+ 
 }
 
 /*scroll bar*/
@@ -462,10 +459,29 @@ button:hover{
   .border-right{
     border: none;
   }
+  input[type=email] {
+    width: 100%;
+    
+  }
+  input[type=text] {
+    width: 100%;
+    
+  }
+  .contact-width{
+    width: 100%;
+    padding-right: 35px;
+    
+  }
+ 
  
 }
 
-
+@media(max-height:800px){
+  .button{
+    display: none;
+  }
+  
+}
  
 
  
