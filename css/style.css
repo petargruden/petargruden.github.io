@@ -38,7 +38,6 @@ a{
   
   .overlay p {
     margin: 0;
-    font-size: 28px;
   }
   /*NAVIGATION*/
 
@@ -119,6 +118,7 @@ nav .mainMenu .closeMenu{
   .jumbo-text{
     width: 60%;
     font-weight: lighter;
+    font-size: 28px;
   }
 
   .button{
@@ -476,11 +476,26 @@ button:hover{
  
 }
 
-@media(max-height:800px){
+@media (max-height:800px){
+  h1{
+    font-size: 3.265rem !important;
+  }
   .button{
+    margin-top: 40px;
+  }
+  .jumbo-text {
+    font-size: 1.165rem !important;
+    padding-bottom: 10px;
+  }
+  .project,.project-bg{
     display: none;
   }
-  
+  .info-content:nth-child(n+2){
+    margin-top: 20px;
+  }
+}
+
+
 }
  
 
