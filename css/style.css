@@ -63,7 +63,6 @@ a{
   }
  
   .opacity{
-    padding: 0;
     margin: 0;
     transition: 0.6s;
     background-color: rgba(0, 0, 0, 0.8);
@@ -84,7 +83,6 @@ a{
 /*HIDE on desktop*/
   nav .openMenu {
     font-size: 2rem;
-    margin: 5px;
     display: none;
     cursor: pointer;
 }
@@ -409,6 +407,8 @@ button:hover{
 }
 
 
+
+
 @media(max-width: 800px){
   nav {
     width: 100%;
@@ -447,7 +447,6 @@ button:hover{
   nav .openMenu {
     display: block;
     transition-duration: 0.3s;
-
   }
   nav .openMenu:hover{
     color: #be9971;
@@ -475,6 +474,12 @@ button:hover{
     padding-right: 35px;
     
   }
+  
+  .nav{
+    width:90%;
+    order: 1;
+    justify-content: start;
+  }
  
  
 }
@@ -499,7 +504,7 @@ button:hover{
 }
 
 
-}
+
  
 
  
