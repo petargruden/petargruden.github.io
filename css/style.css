@@ -14,7 +14,12 @@ a{
 }
 .big-image {
     height: 90vh;
-    background: url("../img/landing.jpg") no-repeat center center  fixed;
+    background: url("../img/residence-2219972_1920.jpg") no-repeat center center  fixed;
+    background-size: cover;  
+  }
+  .big-image-2 {
+    height: 100vh;
+    background: url("../img/residence-2219972_1920.jpg") no-repeat center center  fixed;
     background-size: cover;  
   }
   
@@ -93,7 +98,9 @@ nav .mainMenu .closeMenu{
   cursor: pointer;
 }
 
-
+h3{
+  word-wrap: break-word;
+}
 
   /*zoom nav logo*/
   .zoom{
@@ -141,6 +148,35 @@ nav .mainMenu .closeMenu{
     font-size: larger;
   }
 
+  .translate{
+    transform: translateX(50%);
+    transform: translateY(50%);
+  }
+  .warn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: grey;
+    opacity: 0.5;
+    font-size: smaller;
+
+  }
+  .color{
+    color: #5e503f;
+    opacity: 0.5;
+    font-size: smaller;
+  }
+  .fnt{
+    font-size: 2rem;
+    color: #5e503f;
+  }
+ .space{
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    color: #5e503f;
+    opacity: 0.7;
+  }
+
   /*icons*/
 
   .social{
@@ -152,6 +188,7 @@ nav .mainMenu .closeMenu{
     width: 80px;
     align-items: center;
     display: flex;
+    z-index: 100;
     justify-content: center;
   }
   .fa-facebook-square{
@@ -251,6 +288,7 @@ nav .mainMenu .closeMenu{
 ul{
   list-style-type: none;
 }
+
 
 
 
